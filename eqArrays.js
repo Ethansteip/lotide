@@ -1,13 +1,14 @@
 
 //
-// Write a function that accepts to arrays, and checks to see if
+// Write a function that accepts two arrays, and checks to see if
 // the values of each array are equal between one another.
-// Return if all values are equal, else return false.
+// Return true if all values are equal, else return false.
 //
 
 //
 // Assert Equals - will be used for testing
 //
+
 const assertEqual = function(actual, expected) {
 
   if (actual === expected) {
@@ -22,6 +23,8 @@ const assertEqual = function(actual, expected) {
 //
 // @param {array} arr1 - the first array.
 // @param {array} arr2 - the second array that wioll be compared against the first array.
+//
+
 const eqArrays = function(arr1, arr2) {
 
   // create variable that holds true or false
@@ -49,6 +52,9 @@ const eqArrays = function(arr1, arr2) {
 };
 
 
+//
+// Test Cases
+//
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
 assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), true); // => false
