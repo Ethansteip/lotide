@@ -2,15 +2,15 @@
 
 
 /*
-* eqArrays - will be used to compare the equality of value between 2 arrays.
+* eqArrays - will be used to compare the equality of values between 2 arrays.
 *
 * @param {array} arr1 - the first array.
-* @param {array} arr2 - the second array that wioll be compared against the first array.
+* @param {array} arr2 - the second array that will be compared against the first array.
 */
 
 const eqArrays = function(arr1, arr2) {
 
-  // create variable that holds true or false
+  // create variable that holds true or false.
   let arrayComparison = true;
 
   // First, check if arrays are both the same length, return false if they are not.
