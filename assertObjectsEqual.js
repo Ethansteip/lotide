@@ -5,15 +5,6 @@
 */
 
 /*
-*
-* eqObjects - takes in two objects and returns true or false, based on a perfect match.
-*
-* @param {object} object1 - The first object we will be comparing.
-* @param {object} object2 - the second object that we will be comparing to object1.
-*
-*/
-
-/*
 * eqArrays - will be used to compare the equality of values between 2 arrays.
 *
 * @param {array} arr1 - the first array.
@@ -45,6 +36,15 @@ const eqArrays = function(arr1, arr2) {
   }
   return arrayComparison;
 };
+
+/*
+*
+* eqObjects - takes in two objects and returns true or false, based on a perfect match.
+*
+* @param {object} object1 - The first object we will be comparing.
+* @param {object} object2 - the second object that we will be comparing to object1.
+*
+*/
 
 const eqObjects = function(object1, object2) {
 
