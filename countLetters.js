@@ -33,6 +33,7 @@ const assertEqual = function(actual, expected) {
 
 const countLetters = function(sentance) {
 
+  //initialize empty object
   const results = {};
   // Loop through the sentance to break it down to its individual letters.
   for (let char of sentance.toLowerCase()) {
@@ -56,5 +57,5 @@ const countLetters = function(sentance) {
 const result1 = countLetters("Mississippi");
 assertEqual(result1["m"], 1); // => Pass
 assertEqual(result1["i"], 4); // => Pass
-assertEqual(result1["s"], 4); // => Fail
+assertEqual(result1["s"], 4); // => Pass
 assertEqual(result1["p"], 2); // => Pass
