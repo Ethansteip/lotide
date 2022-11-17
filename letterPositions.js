@@ -80,12 +80,9 @@ const letterPositions = function(sentance) {
     } else {
       results[stringWithoutSpaces[i]].push(i);
     }
-   
   }
-
   console.table(results);
   return results;
-
 };
 
 // Test Cases
