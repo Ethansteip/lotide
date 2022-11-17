@@ -83,15 +83,12 @@ const letterPositions = function(sentance) {
    
   }
 
-  //logic to update results here
   console.table(results);
-  //console.log(stringWithoutSpaces);
   return results;
 
 };
 
 // Test Cases
-//letterPositions("lighthouse in the house");
 assertArraysEqual(letterPositions("hello").h, [0]); // Pass
 assertArraysEqual(letterPositions("hello").e, [1]); // Pass
 assertArraysEqual(letterPositions("hello").l, [2, 3]); // Pass
