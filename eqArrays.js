@@ -23,12 +23,12 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-//
-// eqArrays - will be used to compare the equality of values between 2 arrays.
-//
-// @param {array} arr1 - the first array.
-// @param {array} arr2 - the second array that will be compared against the first array.
-//
+/*
+* eqArrays - will be used to compare the equality of values between 2 arrays.
+*
+* @param {array} arr1 - the first array.
+* @param {array} arr2 - the second array that will be compared against the first array.
+*/
 
 const eqArrays = function(arr1, arr2) {
 

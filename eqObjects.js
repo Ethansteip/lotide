@@ -22,12 +22,12 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-//
-// eqArrays - will be used to compare the equality of values between 2 arrays.
-//
-// @param {array} arr1 - the first array.
-// @param {array} arr2 - the second array that will be compared against the first array.
-//
+/*
+* eqArrays - will be used to compare the equality of values between 2 arrays.
+*
+* @param {array} arr1 - the first array.
+* @param {array} arr2 - the second array that will be compared against the first array.
+*/
 
 const eqArrays = function(arr1, arr2) {
 
@@ -67,11 +67,11 @@ const eqArrays = function(arr1, arr2) {
 
 const eqObjects = function(object1, object2) {
 
-  // Determine the number of keys in each object.
+  // Determine the length of each object.
   let object1Length = Object.keys(object1).length;
   let object2Length = Object.keys(object2).length;
   
-  // Compare the length of each object.
+  // Compare the length of each object and return false if lengths are not equal.
   if (object1Length !== object2Length) {
     console.log("Objects are not of equal length");
     return false;
@@ -79,7 +79,6 @@ const eqObjects = function(object1, object2) {
 
   // Loop through the object and compare values.
   for (let key in object1) {
-    
     // Check the objects values for arrays. If both values are arrays, compare the arrays.
     if (Array.isArray(object1[key]) && Array.isArray(object1[key])) {
       if (eqArrays(object1[key], object2[key]) === false) {
