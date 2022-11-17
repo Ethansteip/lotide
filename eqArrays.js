@@ -5,9 +5,14 @@
 // Return true if all values are equal, else return false.
 //
 
-//
-// Assert Equals - will be used for testing
-//
+/*
+*
+* assertEqual - Compares the returned array from another function and compares it with our expected array.
+*
+* @param {array} actual - actual array returned from another function.
+* @param {array} expected - the array we are expecting to get back.
+*
+*/
 
 const assertEqual = function(actual, expected) {
 
