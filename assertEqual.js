@@ -1,5 +1,12 @@
+/*
+*
+* assertEqual - Compares the returned array from another function and compares it with our expected array.
+*
+* @param {array} actual - actual array returned from another function.
+* @param {array} expected - the array we are expecting to get back.
+*
+*/
 
-// Function Implementation
 const assertEqual = function(actual, expected) {
 
   if (actual === expected) {
