@@ -58,7 +58,7 @@ const assertArraysEqual = function(arr1, arr2) {
 *
 * takeUntil - Takes a slice of an array with elements taken from the beginning until a condition is met.
 * @param {array} array - The array we will be using.
-* @param {callback} callback - information it holds
+* @param {callback} callback - Performs an action on the given array.
 *
 */
 
