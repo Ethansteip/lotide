@@ -24,8 +24,8 @@ const assertEqual = function(actual, expected) {
 *
 * findKey - Returns the key of the first element in an object that matches a condition of the given callback condition.
 *
-* @param {string} argument name - information it holds
-* @param {string} argument name - information it holds
+* @param {object} object - The object we will seatch for a given key.
+* @param {function} callback - a function that holds a condition that has to be met in order to find the object key.
 *
 */
 
