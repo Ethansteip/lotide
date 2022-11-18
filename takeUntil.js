@@ -1,12 +1,12 @@
 /*
-* takeUntil Js - Takes a slice of an array with elements taken from the beginning.
+* takeUntil - Takes a slice of an array with elements taken from the beginning until a condition is met.
 */
  
 /*
 * eqArrays - will be used to compare the equality of values between 2 arrays.
 *
-* @param {array} arr1 - the first array.
-* @param {array} arr2 - the second array that will be compared against the first array.
+* @param {array} arr1 - The first array.
+* @param {array} arr2 - The second array that will be compared against the first array.
 */
 
 const eqArrays = function(arr1, arr2) {
@@ -38,8 +38,8 @@ const eqArrays = function(arr1, arr2) {
 /*
 * assertArraysEqual - Takes in two arrays and console.logs the appropriate message.
 *
-* @param {array} arr1 - the first array.
-* @param {array} arr2 - the second array that will be compared against the first array.
+* @param {array} arr1 - The first array.
+* @param {array} arr2 - The second array that will be compared against the first array.
 */
 
 const assertArraysEqual = function(arr1, arr2) {
@@ -56,7 +56,7 @@ const assertArraysEqual = function(arr1, arr2) {
  
 /*
 *
-* takeUntil - Takes a slice of an array with elements taken from the beginning.
+* takeUntil - Takes a slice of an array with elements taken from the beginning until a condition is met.
 * @param {array} array - The array we will be using.
 * @param {callback} callback - information it holds
 *
