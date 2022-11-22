@@ -56,19 +56,6 @@ const eqArrays = function(arr1, arr2) {
   return arrayComparison;
 };
 
-
-//
-// Test Cases
-//
-
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), true); // => false
-
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true); // => false
-
-assertEqual(eqArrays(["Ethan", "likes", "to", "code"], ["1", "2", 3]), true); // => false
-assertEqual(eqArrays([], []), true); // => true
-assertEqual(eqArrays([], []), false); // => false
+module.exports = eqArrays;
 
  
