@@ -1,25 +1,45 @@
-// middle.js test cases
+/*
+* middle.js test cases.
+*/
 
-// import middle
-const middle = require('../middle');
+// Import Mocha and Chai methods
+const assert = require('chai').assert;
+// Import middle
+const middle   = require('../middle');
 
-// import assertArraysEqual
-const assertArraysEqual = require('../assertArraysEqual');
+// Newest test cases using Mocha and Chai
+describe("#middle", () => {
+  // Case 1
+  it('returns [4] for [1, 2, 3, 4, 5, 6, 7]', () => {
+    assert.deepEqual(middle([1, 2, 3, 4, 5, 6, 7]), [4]);
+  });
+  // Case 2
+  it('returns [2, 3] for [1, 2, 3, 4]', () => {
+    assert.deepEqual(middle([1, 2, 3, 4]), [2, 3]);
+  });
+  // Case 3
+  it("returns [] for ['Ethan', 'Likes']", () => {
+    assert.deepEqual(middle(['Ethan', 'Likes']), []);
+  });
+  // Case 4
+  it("returns ['To', 'Code'] for ['Ethan', 'Likes', 'To', 'Code', 'Fun', 'Things']", () => {
+    assert.deepEqual(middle(['Ethan', 'Likes', 'To', 'Code', 'Fun', 'Things']), ['To', 'Code']);
+  });
+  // Case 5
+  it("returns ['Ethan', 799] for [45, 11, 'Ethan', 799, 1000, 23]", () => {
+    assert.deepEqual(middle([45, 11, 'Ethan', 799, 1000, 23]), ['Ethan', 799]);
+  });
+  // Case 6
+  it("returns [222, 56] for [49, 16, 222, 56, 1, 2]", () => {
+    assert.deepEqual(middle([49, 16, 222, 56, 1, 2]), [222, 56]);
+  });
+  // Case 7
+  it("returns [] for []", () => {
+    assert.deepEqual(middle([]), []);
+  });
+  // Case 8
+  it("returns [] for [2653]", () => {
+    assert.deepEqual(middle([]), []);
+  });
 
-// Test Cases
-middle([1, 2, 3, 4, 5, 6, 7]); // => [4]
-middle([1, 2, 3, 4]); // => [2, 3]
-middle(["Ethan", "Likes"]); // => []
-middle(["Ethan", "Likes", "To", "Code", "Fun", "Things"]); // => ["To", "Code"]
-middle([1, 2]); // => []
-console.log("\n");
-
-assertArraysEqual(middle([45, 11, "Ethan", 799, 1000, 23]), ["Ethan", 799]); // => Pass ["Ethan", 799]
-assertArraysEqual(middle([49, 16, 222, 56, 1, 2]), [222, 56]); // => Pass [222, 56]
-assertArraysEqual(middle([19, 0]), []); // => Pass []
-assertArraysEqual(middle([]), []); // => Pass []
-assertArraysEqual(middle([22]), []); // => Pass []
-console.log("\n");
-
-assertArraysEqual(middle([22, 46, 712]), [22, 46]); // => Fail - 46 !== 22, 46.
-assertArraysEqual(middle([22, 46, 712, 109, 191]), [46]); // => Fail - 712 !== 46
+});

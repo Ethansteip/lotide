@@ -4,11 +4,12 @@
 
 // Import Mocha and Chai methods
 const assert = require('chai').assert;
+// Import head
 const head   = require('../head');
 
 // import assertEqual function
 // const assertEqual = require('../assertEqual');
-// // import head function
+// import head function
 // const head = require('../head');
 
 
