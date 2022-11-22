@@ -7,12 +7,6 @@ const assert = require('chai').assert;
 // Import head
 const head   = require('../head');
 
-// import assertEqual function
-// const assertEqual = require('../assertEqual');
-// import head function
-// const head = require('../head');
-
-
 // Newest test cases using Mocha and Chai
 describe("#head", () => {
   // Case 1
@@ -45,7 +39,7 @@ describe("#head", () => {
   });
   // Case 8
   it("returns 'The' for ['The', 'Truth', 'Comes', 'Out']", () => {
-    assert.strictEqual(head(["The", "Truth", "Comes", "Out"]), "Truth");
+    assert.strictEqual(head(["The", "Truth", "Comes", "Out"]), "The");
   });
 
 });
