@@ -1,27 +1,10 @@
 
-//
-// Write a function that accepts two arrays, and checks to see if
-// the values of each array are equal between one another.
-// Return true if all values are equal, else return false.
-//
-
 /*
-*
-* assertEqual - Compares the returned array from another function and compares it with our expected array.
-*
-* @param {array} actual - actual array returned from another function.
-* @param {array} expected - the array we are expecting to get back.
-*
-*/
+* eqArrays -  a function that accepts two arrays, and checks to see if
+* the values of each array are equal between one another.
+* Return true if all values are equal, else return false.
+/*
 
-const assertEqual = function(actual, expected) {
-
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}.`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}.`);
-  }
-};
 
 /*
 * eqArrays - will be used to compare the equality of values between 2 arrays.
