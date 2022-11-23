@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@ethan.steip/lotide",
   "version": "1.0.0",
-  "description": "A library of useful javascript helper functions.",
+  "description": "A library of useful javascript helper functions and A mini clone of the [Lodash](https://lodash.com) library",
   "main": "Formatting.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Ethansteip/lotide.git"
   },
-  "author": "",
+  "author": "Ethan Steip",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Ethansteip/lotide/issues"
