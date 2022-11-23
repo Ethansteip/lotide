@@ -58,7 +58,7 @@ const eqArrays = function(arr1, arr2) {
 
 /*
 *
-* letterPositions - finds the positions of each letter in a string
+* letterPositions - finds the positions of each letter in a string.
 *
 * @param {string} sentance - the string that we'll use to determine the position of each of it's letters.
 *

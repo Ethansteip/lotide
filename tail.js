@@ -1,3 +1,9 @@
+/*
+* tails - returns a new array containing all elements greater than index 0 from the provided array.
+*
+* @param {array} array - the array we will be pulling elements > index[0] from.
+*/
+
 
 // Returns the tail (all elements passed index 0) of an array.
 const tail = function(array) {
